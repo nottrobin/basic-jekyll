@@ -1,0 +1,46 @@
+---
+---
+
+{% include regional-head.html %}
+
+
+    <div class="gu3 inner">
+        <div class="row">
+            <div class="col gu2 mainpanel">
+
+            {% include hpadditional.html %}
+
+            <p class="listtitle"><a href="[[~[[++news_id]]]]">Latest news</a></p>
+            <ul class="newslist">
+              {% include get-resources-news-items.html %}
+            </ul>
+            
+              {% include rss.html %}
+
+                <!-- Two column width -->
+               {% include content.html %}
+
+
+            </div>
+            <div class="col gu1 sidepanel">
+
+            <div class="spchunk">
+            <h2>Video</h2>
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" width="264" height="164">
+                <param name="width" value="264">
+                <param name="height" value="164">
+                <param name="allowfullscreen" value="true">
+                <param name="wmode" value="transparent">
+                <param name="src" value="http://www.youtube.com/v/yQVbd9CFt_c?fs=1&amp;hl=en_GB">
+                <embed type="application/x-shockwave-flash" width="264" height="164" allowfullscreen="true" wmode="transparent" src="[[*NewsYouTube]]">
+            </object>
+            <p><a href="[[*NewsYouTube]]" target="_blank">View larger on YouTube</a></p>
+            <p><a href="http://www.youtube.com/[[++youtube:default=`greenpartyew`]]">More Green videos</a></p>
+            </div>
+
+            {% include side-panel-content.html %}
+
+        </div>
+        </div>
+
+{% include regional-foot.html %}
